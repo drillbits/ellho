@@ -9,6 +9,6 @@ WORKDIR $GOPATH/src/github.com/drillbits/ellho
 
 RUN go install
 
-EXPOSE 5000
+EXPOSE 8600
 
-CMD ["ellho", "-p", "5000"]
+CMD ["ellho", "-p", "8600", "-v"]

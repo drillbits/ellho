@@ -1,0 +1,28 @@
+<html>
+
+<head>
+	<title>ellho</title>
+</head>
+
+<body>
+    <h1>hello, world</h1>
+
+    <p>Hostname: {{.Hostname}}</p>
+
+    <p>Interfaces</p>
+
+    <ul>
+        {{range $key, $value := .Interfaces}}
+        <li>
+            {{$key}}<br>
+            <ul>
+                {{range $value}}
+                <li>{{.}}</li>
+                {{end}}
+            </ul>
+        </li>
+        {{end}}
+    </ul>
+</body>
+
+</html>
