@@ -40,7 +40,7 @@ kubeconfig entry generated for ellho.
 ## Create Kubernetes pod
 
 ```
-$ kubectl run ellho --image=$IMAGE_NAME --port=5000
+$ kubectl run ellho --image=$IMAGE_NAME --port=8600
 deployment "ellho" created
 $ kubectl get deployments
 NAME    DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
@@ -57,7 +57,7 @@ $ kubectl expose deployment ellho --type="LoadBalancer"
 service "ellho" exposed
 $ kubectl get services ellho
 NAME    CLUSTER-IP       EXTERNAL-IP      PORT(S)    AGE
-ellho   10.111.251.106   104.198.112.14   5000/TCP   1m
+ellho   10.111.251.106   104.198.112.14   8600/TCP   1m
 ```
 
 ## Cleaning it Up
